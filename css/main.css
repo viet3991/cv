@@ -256,16 +256,17 @@ ul {
     }
 }
 
+
 /* === banner ===  */
 #banner {
+    position: relative;
     margin-top: 80px;
     overflow: hidden;     /* --- hien thi .dec ma ko xuat hien thanh keo ngang ---  */
-
 }
 
 .banner__dec__r {
-    top: 13%;
-    transform: translateX(60%);
+    top: 0%;
+    transform: translateX(66%);
 }
 .banner__dec__r img {
     width: 80%;
