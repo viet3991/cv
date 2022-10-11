@@ -292,11 +292,46 @@ ul {
 .banner__heading p {
     text-align: left;
 }
+
+#banner .content {
+    font-weight: 300;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+#banner table td {
+    padding: 5px 15px;
+}
+#banner .col__1 {
+    color: black;
+    font-weight: 500;
+}
+#banner .col__2 {
+    color: var(--green);
+    font-weight: 500;
+}
+
 @media (min-width: 992px) {
     .banner__heading h3, h5 {
         text-align: left;
     }
+
+    #banner .content {
+        display: flex;
+        justify-content: left;
+        margin-left: 0;
+    }
+
+    #banner table td {
+        padding-left: 0;
+    }
 }
+
+
+
+
+
+
 
 /* === education === */
 #education {
@@ -327,9 +362,13 @@ ul {
 
 /* --- chart education ---  */
 .edu__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edu__img > div{
     font-weight: 500;
-    margin: 20px auto;
-
+    width: 100%;
 }
 
 .edu__img h5 {
@@ -379,34 +418,49 @@ ul {
 }
 
 
-
-
-
-/* === knowledge ===  */
-#knowledge {
+/* === skill ===  */
+#skill {
     position: relative;
-    overflow: hidden;
+    overflow: hidden;     /* --- hien thi .dec ma ko xuat hien thanh keo ngang ---  */
 }
-.know__dec__r {
-    bottom: 0;
-    transform: translateX(66%);
-}
-
-.know__dec__r img {
+.skill__dec__r img {
     width: 80%;
 }
 
-
-
-#knowledge .content {
-    font-weight: 300;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
+.skill__dec__r {
+    bottom: 0;
+    transform: translateX(60%);
 }
-#knowledge ul li::marker {
+
+#skill ul li::marker {
     font-size: 25px;
 }
+
+
+#skill .content {
+    font-weight: 300;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skill h5 {
+    text-align: center;
+}
+
+#skill table td {
+    padding: 5px 15px;
+}
+#skill .gre {
+    color: var(--green-l);
+    font-size: 22px;
+}
+#skill .gra {
+    color: var(--gray-l);
+    font-size: 22px;
+}
+
 
 
 /* === project ===  */
@@ -495,61 +549,15 @@ ul {
 
 }
 
-/* === skill ===  */
-#skill {
-    position: relative;
-    overflow: hidden;     /* --- hien thi .dec ma ko xuat hien thanh keo ngang ---  */
-}
-.skill__dec__r img {
-    width: 80%;
-}
 
-.skill__dec__r {
-    bottom: 0;
-    transform: translateX(60%);
-}
-
-#skill ul li::marker {
-    font-size: 25px;
-}
-
-
-#skill .content {
-    font-weight: 300;
-    margin: 20px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#skill h5 {
-    text-align: center;
-}
-
-#skill table td {
-    padding: 5px 15px;
-}
-#skill .gre {
-    color: var(--green-l);
-    font-size: 22px;
-}
-#skill .gra {
-    color: var(--gray-l);
-    font-size: 22px;
-}
 
 
 /* === contact ===  */
-#contact {
+#about {
     background-color: var(--gray-l);
 }
-#contact .content {
-    font-weight: 300;
+#about .content {
     margin: 20px;
-    display: flex;
-    justify-content: center;
-}
-#contact table td {
-    padding: 5px 15px;
     color: white;
+    text-align: center;
 }
