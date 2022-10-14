@@ -342,6 +342,17 @@ ul {
     top: 0;
 }
 
+.edu__dec__r img {
+    width: 80%;
+    opacity: 0.1;
+}
+
+
+.edu__dec__r {
+    bottom: 10%;
+    transform: translateX(0%);
+}
+
 #education .content {
     font-weight: 300;
     margin: 20px auto;
@@ -360,61 +371,10 @@ ul {
     margin-left: 20px;
 }
 
-/* --- chart education ---  */
-.edu__img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.edu__img > div{
-    font-weight: 500;
-    width: 100%;
-}
-
-.edu__img h5 {
-    font-size: 20px;
-}
-
-.edu__img .item {
-    padding: 10px 0;
-    display: block;
-    height: 70px;
-}
-.edu__img .left {
-    background-color: var(--green-l);
-    border-radius: 5px 0 0 5px;
-    float: left;
-    text-align: center;
-    font-size: 14px;
-
-}
-.edu__img .right {
-    background-color: var(--gray-l);
-    height: 21px;
-    border-radius: 0 5px 5px 0;
-    float: left;
-    font-size: 14px;
-}
-
-.edu__img .left__1, .left__5 {
-    width: 80%;
-}
-.edu__img .right__1, .right__5 {
-    width: 20%;
-}
-
-.edu__img .left__2, .left__3, .left__6 {
-    width: 75%;
-}
-.edu__img .right__2, .right__3, .right__6 {
-    width: 25%;
-}
-
-.edu__img .left__4 {
-    width: 70%;
-}
-.edu__img .right__4 {
-    width: 30%;
+@media (min-width: 992px) {
+    .edu__dec__r img {
+        opacity: 1;
+    }
 }
 
 
@@ -428,12 +388,8 @@ ul {
 }
 
 .skill__dec__r {
-    bottom: 0;
+    top: 5%;
     transform: translateX(60%);
-}
-
-#skill ul li::marker {
-    font-size: 25px;
 }
 
 
@@ -461,6 +417,63 @@ ul {
     font-size: 22px;
 }
 
+
+/* --- skill chart ---  */
+.skill__chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill__chart > div{
+    font-weight: 500;
+    width: 100%;
+}
+
+.skill__chart h5 {
+    font-size: 20px;
+}
+
+.skill__chart .item {
+    padding: 10px 0;
+    display: block;
+    height: 70px;
+}
+.skill__chart .left {
+    background-color: var(--green-l);
+    border-radius: 5px 0 0 5px;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+
+}
+.skill__chart .right {
+    background-color: var(--gray-l);
+    height: 21px;
+    border-radius: 0 5px 5px 0;
+    float: left;
+    font-size: 14px;
+}
+
+.skill__chart .left__1, .left__5 {
+    width: 80%;
+}
+.skill__chart .right__1, .right__5 {
+    width: 20%;
+}
+
+.skill__chart .left__2, .left__3, .left__6 {
+    width: 75%;
+}
+.skill__chart .right__2, .right__3, .right__6 {
+    width: 25%;
+}
+
+.skill__chart .left__4 {
+    width: 70%;
+}
+.skill__chart .right__4 {
+    width: 30%;
+}
 
 
 /* === project ===  */
