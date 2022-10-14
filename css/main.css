@@ -158,7 +158,7 @@ ul {
 }
 
 .navbar__link a:hover {
-    color: var(--green);
+    color: var(--green-l);
     transition: var(--smooth);
     font-weight: 900;
 
